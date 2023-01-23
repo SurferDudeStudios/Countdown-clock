@@ -1,0 +1,31 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Countdown to event countdown clock</title>
+</head>
+<body>
+  <!-- Display the countdown timer in an element -->
+  <!-- Use CSS to enhance the content below -->
+ <h1>Countdown to event in:</h1>
+ <div id="demo" class="countdown-clock">
+  <noscript>Sorry, but you need JavaScript to view the Countdown to event countdown clock.</noscript>
+ </div>
+</body>
+<script type="text/javascript">
+// Update the count down clock
+var x = setInterval(function() {
+// Call the clock build function and distance build
+//Idealy use back end code to populate the date to countdown to 
+clockBuild(theDistanceBuild("Jul 1, 2035 12:00:00"));
+});
+function theDistanceBuild(aTime){
+	var theDistance = new Date(aTime).getTime() - new Date().getTime();
+	return theDistance;
+};
+</script>
+<script type="text/javascript" src="js/clock-script.js"></script>
+</html>
